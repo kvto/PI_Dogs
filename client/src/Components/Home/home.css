@@ -1,0 +1,90 @@
+::-webkit-scrollbar {
+    display: none;
+    }
+
+.buttomCreate{
+    width: 50px;
+    height: 37px;
+    font-size: 17px;
+    border: 2px solid #221f1f;
+    margin: 13px;
+    color: #000000;
+    letter-spacing: 0.2ex;
+    border-radius: 7px;
+    background-color: #ffbb73;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.buttomCreate:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .buttomRefresh{
+    background-color: #ffbb73;
+    border-radius: 0.8ex;
+    position: relative;
+    width: 50px;
+    height: 39px;
+    top: 0.7ex;
+    cursor: pointer;
+    font-size: 28px;
+    transition: all 0.4s ease-in-out;
+}
+
+.buttomRefresh:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+      }
+
+.icon {
+    position: relative;
+    right: 0.1ex;
+    top: 0ex;
+    transition: all 0.4s ease-in-out;
+    }
+.icon:hover{
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(1);
+}
+.tittle{
+    position: relative;
+    bottom: 0ex;
+    color: #ffbb73;
+    font-size: 190%;
+    text-shadow: 0.1ex 0.1ex 0.2ex rgb(5, 39, 2);
+    left: 34ex;
+    top: -6ex;
+    margin-right: auto;
+    margin-bottom: 1ex;
+    width: 25ex;
+    font-family: serif;
+}
+
+.buttoms{
+    position: relative;
+    right: 300px;
+    top: 25px;
+}
+
+.navbar{
+    position: relative;
+    left: 400px;
+    top: -35px;
+}
+
+.list {
+    border-radius: 1ex;
+    margin-inline-start: 5ex;
+    color: #ffbb73;
+    background-color: rgb(37, 50, 58, 0.5);
+    cursor: pointer;
+    width: 23ex;
+    height: 4ex;
+    text-align: center;
+    top: -10ex;
+    position: relative;
+    font-family: serif;
+    font-size: 1.9ex;
+}

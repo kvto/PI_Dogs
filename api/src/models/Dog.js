@@ -14,11 +14,11 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    weight: { //peso
+    height: { //peso
       type: DataTypes.STRING,
       allowNull: false,
     },
-    height: { //altura
+    weight: { //altura
       type: DataTypes.STRING,
       allowNull: false
     },
@@ -30,11 +30,11 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: true
     },
-    created :{
-      type: DataTypes.BOOLEAN,
-      defaultValue: true,
-      allowNull: false,
-    },
+    // created :{
+    //   type: DataTypes.BOOLEAN,
+    //   defaultValue: true,
+    //   allowNull: true,
+    // },
   },
   {
     timestamps: false,

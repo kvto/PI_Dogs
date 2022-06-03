@@ -1,5 +1,5 @@
 // const {API_KEY} =  process.env
-const {Dog, Temperament} = require("../models/Dog");
+const {Dog, Temperament} = require("../db");
 const axios= require('axios')
 const {Router} = require('express'); 
 const router = Router();
@@ -11,6 +11,7 @@ const getApiMainRout = async () =>{
         return{
             id: e.id,
             name: e.name,
+            height: e.height.metric,
             weight: e.weight.metric,
             image: e.image.url,
             temperament: e.temperament
@@ -77,7 +78,59 @@ router.get("/", async (req,res) => {
 // Incluir los temperamentos asociados
 
 router.get("/:id", async (req,res) =>{
-    const {id} = req.params;
-})
+    try{  
+        const {id}=req.params;
+        const all= await allDogs();
+        if(id){
+            const dogNew=all.filter((e)=>e.id==id)
+            var resultado={      
+                    name :dogNew[0].name,
+                    height:dogNew[0].height,
+                    weight:dogNew[0].weight,
+                    life_span:dogNew[0].life_span,
+                    image:dogNew[0].image,
+                    temperament:dogNew[0].temperament
+                    }
+               }
+    
+    
+            //newDog[0].temperaments=oso
+            //console.log(temps);
+            res.status(202).send(resultado);}
+            catch (e){
+                res.status(404).send("***Error***")
+            }
+        });
+
+
+router.post('/', async (req,res,next)=>{
+    const {
+        name,
+        height,
+        weight,
+        life_span,
+        image,
+        temperament,
+    } = req.body;
+    
+    let dog = await Dog.create({
+        name,
+        height,
+        weight,
+        life_span,
+        image: image ? image : "https://pbs.twimg.com/media/FGfgmSPWQAUDu4l.jpg",
+    });
+    
+    
+    let temperamentDb = await Temperament.findAll({
+        where: {
+            name: temperament,
+        },
+    });
+
+    dog.addTemperament(temperamentDb);
+    
+    res.status(200).send("Perrito creado! :D");
+});
 
 module.exports = router
