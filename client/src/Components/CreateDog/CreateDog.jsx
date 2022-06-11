@@ -97,6 +97,11 @@ export default function CreateDog(){
     function handleSubmit(e){
         e.preventDefault()
         setErrors(validate(input))
+        const errorSaver = validate(input)
+        if (Object.values(errorSaver).length !== 0) {
+            alert('Error a la hora de rellenar los datos, verifique 🛑');            //alert("Error, Completa los campos con valores que cumplan las condiciones para crear tu raza de perro")
+        }
+        else{
             dispatch(postDog(input));
             alert('La raza fue agregada correctamente!✅');
             setInput({
@@ -112,7 +117,7 @@ export default function CreateDog(){
         });
         dispatch(getAllDogs());
          navigate("/home");
-         
+    }
     }
     return(
         <div className="backgroundCreate">

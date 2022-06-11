@@ -5,8 +5,10 @@ module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('dog', { //raza
     id: {
+      //UUID = identificador único
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV1,
+      //DEBE SER OBLIGATORIO
       allowNull: false,
       primaryKey: true
     },
@@ -24,18 +26,20 @@ module.exports = (sequelize) => {
     },
     life_span: {
       type: DataTypes.STRING,
+      //NO ES OBLIGATORIO
       allowNull: true
     },
     image: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    // created :{
-    //   type: DataTypes.BOOLEAN,
-    //   defaultValue: true,
-    //   allowNull: true,
-    // },
+    created :{
+      type: DataTypes.BOOLEAN,
+      defaultValue: true,
+      allowNull: true,
+    },
   },
+  // QUITAMOS LOS CAMPOS QUE APARECEN AUTOMATICAMENT AL MOMENTO DE CARGAR LOS MODELOS
   {
     timestamps: false,
     createdAt: false,    

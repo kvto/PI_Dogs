@@ -8,7 +8,15 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <Provider store = {store}>
+  //El <Provider>componente hace que Redux store 
+  // esté disponible para cualquier componente anidado que nec
+  // esite acceder a la tienda Redux.
+
+
+  //El BROWSERROUTER biblioteca estándar para el enrutamiento en React. 
+  // Permite la navegación entre vistas de diferentes componentes en una aplicación React, 
+  // permite cambiar la URL del navegador y mantiene la interfaz de usuario sincronizada con la URL.
+  <Provider store = {store}> 
   <React.StrictMode>
     <BrowserRouter>
      <App />

@@ -37,7 +37,58 @@
     margin-bottom: 1ex;
     width: 25ex;
     font-family: serif;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #ffa500;
 }
+
+@-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+  @keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
 
 .buttonRefresh{
     background-color: #ffbb73;
@@ -239,8 +290,8 @@
     background-color: #ffbb73;
     border-radius: 5ex;
     border-color: transparent;
-    width: 4ex;
-    height: 4ex;
+    width: 3ex;
+    height: 3ex;
 }
 
 .buttonRemove:hover{
@@ -250,10 +301,10 @@
 
 .imgRemoveTemperament{
     position:relative;
-    left: -0.2ex;
+    left: -0.1ex;
     top: 0.1ex;
-    width: 3ex;
-    height: 3ex;
+    width: 2ex;
+    height: 2ex;
 }
 
 .createDogButton

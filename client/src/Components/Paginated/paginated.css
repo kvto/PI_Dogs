@@ -17,18 +17,21 @@
     position: relative;
     font-family: serif;
     font-size: 2ex;
+
 }
 
 .paginationButton:hover {
     transition-delay: 0s;
     color: rgb(255, 255, 255);
     transform: translateY(1ex);
+    box-shadow: 1px 1px #ffbb73, 2px 2px #ffbb73, 3px 3px #ffbb73;
+    transform: translateX(-3px);
 }
 
 .paginationButton:active
 {
     transition-delay: 0s;
-    color: rgb(0, 255, 21);
-    box-shadow: 0 0 40px rgb(59, 221, 10);        
+    color: #ffbb73;
+    box-shadow: 0 0 40px #ffbb73;        
     transform: translateY(1ex);  
 }

@@ -12,10 +12,8 @@ const router = Router();
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
-// GET /dogs?name="...":
-// Obtener un listado de las razas de perro que contengan la palabra ingresada como query parameter
-// Si no existe ninguna raza de perro mostrar un mensaje adecuado
-
+// DOGS Y TEMPERAMENT SERAN LAS RUTAS DEL BACKENDO QUE USAREMOS.
+// dogs y tem SERAN NUESTROS CONTROLADORES
 router.use('/dogs', dogs);
 router.use('/temperament', tem);
 module.exports = router;

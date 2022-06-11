@@ -4,8 +4,39 @@ import linkedin from "../Img/linkid.png";
 import githubicon from "../Img/git.png";
 import { Link } from "react-router-dom";
 
+/* COMPONENTE DE CLASE
 
+export default class Home extends React.Component{
+.... 
+}
+EL RENDER DE UN COMPONENTE DE CLASE ES
+  render(){
+    return{
+      ....
+    }
+  }
+
+  PARA COLOCAR UN ESTADO LOCAL EN UN COMPONENTE DE CLASE ES:
+    constructor(props){
+      super(props);
+      this.state={                                             =>     ESTO EQUIVALE AL states en los
+                                                                      componentes de funciones
+        name:'kevin';
+      }
+    }
+
+
+
+
+
+COMPONENTE DE FUNCION 
+          |
+          |
+          |*/
 export default function landing() {
+  /* EL RENDER DE UN COMPONENTE DE FUNCION ES
+  RETURN
+    |*/
   return (
     <div className='background'>
     <div className="icons">

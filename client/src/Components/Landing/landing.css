@@ -5,6 +5,32 @@
   min-zoom: 60;
   
 }
+
+button {
+  border: 2px solid;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  background:  
+    radial-gradient(circle, #0000 1%, var(--c) 1%) 50%/0%
+    var(--c);
+  transition: background 0.6s;
+}
+button:hover,
+button:focus-visible{
+  background-size: 15000%;
+}
+button:active {
+  background-color: var(--r,#FA6900); /* color of the ripple effect*/
+  background-size: 100%;
+  transition: 0s;
+}
+button:focus-visible {
+  outline-offset: 2px;
+  outline: 3px solid #000;
+}
+
 .background {
     background: url("../Img/landing.jpg");
     background-size: cover;
@@ -35,7 +61,13 @@
     margin-right: auto;
     color: #E9BD15;
     animation: move linear 2000ms infinite;
-    
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
 }
 
 .title1{
@@ -49,81 +81,61 @@
     font-size: 50px;
     top: 25%;
     left: 75%;
-    color: #E9BD15;
     margin-top: auto;
     margin-right: auto;
-    color: #E9BD15;
-    animation: move linear 2000ms infinite;
-    
-    /*
-    
-    
-    */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
 }
 
-
-@keyframes move {
-    0% {
-      text-shadow:
-        4px -4px 0 #b02c02,
-        3px -3px 0 #b02c02,
-        2px -2px 0 #b02c02,
-        1px -1px 0 #b02c02,
-        -4px 4px 0 #969696,
-        -3px 3px 0 #969696,
-        -2px 2px 0 #969696,
-        -1px 1px 0 #969696
-      ;
-    }
-    25% {
-      text-shadow:
-        -4px -4px 0 #969696,
-        -3px -3px 0 #969696,
-        -2px -2px 0 #969696,
-        -1px -1px 0 #969696,
-        4px 4px 0 #b02c02,
-        3px 3px 0 #b02c02,
-        2px 2px 0 #b02c02,
-        1px 1px 0 #b02c02
-      ;
-    }
-    50% {
-      text-shadow:
-        -4px 4px 0 #b02c02,
-        -3px 3px 0 #b02c02,
-        -2px 2px 0 #b02c02,
-        -1px 1px 0 #b02c02,
-        4px -4px 0 #969696,
-        3px -3px 0 #969696,
-        2px -2px 0 #969696,
-        1px -1px 0 #969696
-      ;
-    }
-    75% {
-      text-shadow:
-        4px 4px 0 #969696,
-        3px 3px 0 #969696,
-        2px 2px 0 #969696,
-        1px 1px 0 #969696,
-        -4px -4px 0 #b02c02,
-        -3px -3px 0 #b02c02,
-        -2px -2px 0 #b02c02,
-        -1px -1px 0 #b02c02
-      ;
-    }
-    100% {
-      text-shadow:
-        4px -4px 0 #b02c02,
-        3px -3px 0 #b02c02,
-        2px -2px 0 #b02c02,
-        1px -1px 0 #b02c02,
-        -4px 4px 0 #969696,
-        -3px 3px 0 #969696,
-        -2px 2px 0 #969696,
-        -1px 1px 0 #969696
-      ;
-    }
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
   }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
 
   .icons {
     display: flex;
@@ -151,7 +163,7 @@
 .buttom{
     width: 126px;
     height: 53px;
-    font-size: 20px;
+    font-size: 16px;
     border: 2px solid #969696;
     margin: 40px;
     color: #563A2E;
@@ -163,9 +175,14 @@
     top: 72%;
     left: 78%;
     position: absolute;
-    background-color: #ffbb73;
+    background-color: #ffa500;
     font-weight: bold;
     border-radius: 5px;
+    --c: #fff;
+  color: #0B486B;
+  animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+
 }
 
 .buttom:hover{
