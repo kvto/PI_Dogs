@@ -21,6 +21,11 @@
     transform: scale(1.2);
     /*transformamos al momento de colocar el mouse sobre el objeto*/
     cursor: pointer;
+    transition-delay: 0s;
+    color: rgb(14, 14, 14);
+    transform: translateY(1ex);
+    box-shadow: 1px 1px #ffbb73, 2px 2px #ffbb73, 3px 3px #ffbb73;
+    transform: translateX(-3px);
 }
 
 .buttomRefresh {
@@ -37,6 +42,7 @@
 .buttomRefresh:hover {
     transform: scale(1.2);
     cursor: pointer;
+  
 }
 
 .iconRefresh {
@@ -53,6 +59,7 @@
     que una transición comience a ejecutarse durante un 
     período de tiempo desde que se aplica.*/
     transform: rotate(360deg) scale(1);
+    
 }
 
 .tittle {
@@ -63,7 +70,7 @@
     text-shadow: 0.1ex 0.1ex 0.2ex rgb(5, 39, 2);
     /*Permite aplicar efectos de sombra al texto del elemento.*/
     left: 34ex;
-    top: -6ex;
+    top: -7ex;
     margin-right: auto;
     margin-bottom: 1ex;
     width: 25ex;
@@ -83,7 +90,7 @@
 .navbar {
     position: relative;
     left: 400px;
-    top: -35px;
+    top: -37px;
 }
 
 .list {
@@ -120,6 +127,23 @@
     /*La grid-row-gappropiedad define el tamaño del espacio entre las filas en un diseño de cuadrícula*/
     position: sticky;
     top: 9ex;
+}
+
+.loading{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  width: 10%;
+  height: 10%;
+  margin-top: 200ex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.loadinttext{
+  color: #ffbb73;
 }
 
 .containers-dog {

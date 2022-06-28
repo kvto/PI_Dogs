@@ -17,16 +17,17 @@
 }
 
 .cardContainer{
-    backdrop-filter: blur(5ex);
+    backdrop-filter: blur(1ex);
     margin: 1ex;
-
-    top: 7ex;
-    left: -40ex;
+    top: 1ex;
+    left: 0ex;
     right: 5ex;
-    border-radius: 15px;
+    border-radius: 100px;
     position: relative;
-    width: 28%;
-    height: 50%;
+    width: 50%;
+    height: 56%;
+    
+
 }
 .titolin{
     left: -27ex;
@@ -40,12 +41,14 @@
    border-top-right-radius: 10px;
     max-width: 260px;
     border-radius: 15px;
-    margin: 2px;
+    margin: 15px;
 }
 .description{
-    font-size: 20px;
+    font-size: 25px;
     font-family: serif;
-    line-height: 30px;
+    line-height: 35px;
+    text-shadow: -1px 0 #5a647a, 0 1px #5a647a, 1px 0 #5a647a, 0 -1px #5a647a, -2px 2px 0 #414D68, 2px 2px 0 #5a647a, 1px 1px #5a647a, 2px 2px #5a647a; 
+
 }
 
 .header{
@@ -53,8 +56,12 @@
     width: 100%;
     border-radius: 10px; /* Redondeamos los bordes del form */
 }
-.nombre{
-    margin: 0px;
+.name{
+    margin: 5px;
+    font-size: 30px;
+    color: white;
+    text-shadow: -1px 0 #5a647a, 0 1px #5a647a, 1px 0 #5a647a, 0 -1px #5a647a, -2px 2px 0 #414D68, 2px 2px 0 #5a647a, 1px 1px #5a647a, 2px 2px #5a647a; 
+
     
 }
 .iconHome-detail{
@@ -63,10 +70,10 @@
     margin: 2ex;
     margin-top: -3ex;
     margin-left: 47%;
-    right: 49%;
+    right: 23%;
     width: 3.5%;
     height: 5%;
-    top: 2ex;
+    top: -9ex;
     box-shadow: 0px 0px 10px 0px rgb(23, 46, 1);
     border-radius: 5ex;
 }
@@ -82,59 +89,71 @@
     display: flex;
     width: 10%;
     height: 10%;
-    top: 5ex;
+    margin-top: 40ex;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+}
+
+.loadinttext{
+  color: #ffbb73;
 }
 
 .text {
-    fill: none;
-    stroke-width: 6;
-    stroke-linejoin: round;
-    stroke-dasharray: 70 330;
-    stroke-dashoffset: 0;
-    -webkit-animation: stroke 6s infinite linear;
-    animation: stroke 6s infinite linear;
+    top: -3ex;
+    position: relative;
+    font-size: 190%;
+    font-family: serif;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+
   }
+
+  @-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
   
-  .text:nth-child(5n + 1) {
-    stroke: #F2385A;
-    -webkit-animation-delay: -1.2s;
-    animation-delay: -1.2s;
-  }
-  .text:nth-child(5n + 2) {
-    stroke: #F5A503;
-    -webkit-animation-delay: -2.4s;
-    animation-delay: -2.4s;
-  }
-  
-  .text:nth-child(5n + 3) {
-    stroke: #E9F1DF;
-    -webkit-animation-delay: -3.6s;
-    animation-delay: -3.6s;
-  }
-  
-  .text:nth-child(5n + 4) {
-    stroke: #56D9CD;
-    -webkit-animation-delay: -4.8s;
-    animation-delay: -4.8s;
-  }
-  
-  .text:nth-child(5n + 5) {
-    stroke: #3AA1BF;
-    -webkit-animation-delay: -6s;
-    animation-delay: -6s;
-  }
-  
-  @-webkit-keyframes stroke {
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
     100% {
-      stroke-dashoffset: -400;
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+      color: #fff6a9;
     }
   }
   
-  @keyframes stroke {
+  @keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
     100% {
-      stroke-dashoffset: -400;
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+      color: #fff6a9;
     }
   }
-  

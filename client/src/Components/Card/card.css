@@ -39,27 +39,34 @@ animation-iteration-count: 1;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     color:rgb(255, 254, 253);
-    text-shadow: 0.1px 0.1px 5px rgb(0, 0, 0);
     text-align: center;
     text-decoration:none;
     font-size: 24px;
     font-family: serif;
+    text-shadow: -1px 0 #5a647a, 0 1px #5a647a, 1px 0 #5a647a, 0 -1px #5a647a, -2px 2px 0 #414D68, 2px 2px 0 #5a647a, 1px 1px #5a647a, 2px 2px #5a647a; 
+
 }
 
 .temperamentsHome {
     text-align: center;
-    color: #ffbb73;
+    color: #f79a37;
     position: relative;
-    top: 2ex;
+    top: 3ex;
     font-family: serif;
+    text-shadow: -1px 0 #5a647a, 0 1px #5a647a, 1px 0 #5a647a, 0 -1px #5a647a, -2px 2px 0 #414D68, 2px 2px 0 #5a647a, 1px 1px #5a647a, 2px 2px #5a647a; 
+
 }
 
 .weightHome {
     display: flex;
+    position: relative;
+    top: 1ex;
     justify-content: center;
-    color:#ffbb73;
+    color:#f79a37;
     text-shadow: 0.1ex 0.1ex 0ex black;
     font-family: Arial;
+    text-shadow: -1px 0 #5a647a, 0 1px #5a647a, 1px 0 #5a647a, 0 -1px #5a647a, -2px 2px 0 #414D68, 2px 2px 0 #5a647a, 1px 1px #5a647a, 2px 2px #5a647a; 
+
 }
 
 .toDogId{

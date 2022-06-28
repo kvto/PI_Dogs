@@ -3,6 +3,7 @@ const { expect } = require('chai');
 const session = require('supertest-session');
 const app = require('../../src/app.js');
 const { Dog, conn } = require('../../src/db.js');
+const {getApiMainRout} = require('../../src/controllers/dogs')
 
 const agent = session(app);
 const dog = {
@@ -16,9 +17,10 @@ describe('Videogame routes', () => {
   }));
   beforeEach(() => Dog.sync({ force: true })
     .then(() => Dog.create(dog)));
-  describe('GET /dogs', () => {
-    it('should get 200', () =>
-      agent.get('/dogs').expect(200)
-    );
-  });
+  describe('POST /dogs', () =>{
+    it('should return', () => {
+      // console.log(expect(sum(3,5)));
+      expect(getApiMainRout(infoDog)).toBe();
+    });
+  })
 });

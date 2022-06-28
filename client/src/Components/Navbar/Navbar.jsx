@@ -30,7 +30,7 @@ export default function Navbar() {
             <div>
                 <input
                     type="text"
-                    placeholder="Search..."
+                    placeholder="Buscar..."
                     onKeyPress={e => e.key === 'Enter' && handleSubmit(e) }
                     onChange={e => handleInputChange(e)}
                     value={name}

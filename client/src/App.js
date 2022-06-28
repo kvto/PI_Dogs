@@ -6,7 +6,8 @@ import DogCreate from '../src/Components/CreateDog/CreateDog';
 import Detail from '../src/Components/Detail/detail'
 
 function App() {
-  // Route es un proceso en el que se dirige a un usuario a diferentes páginas en función de su acción o solicitud
+  // Route es un proceso en el que se dirige a un usuario a 
+  //diferentes páginas en función de su acción o solicitud
   /*Renderizamos los componentes para cada ruta*/
   return (
     <div className="App">

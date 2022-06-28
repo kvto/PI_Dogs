@@ -1,4 +1,4 @@
-.backgroundCreate{
+.backgroundCreate {
     background-image: url("../Img/fondo-createdog.jpg");
     justify-content: center;
     width: 100%;
@@ -7,7 +7,7 @@
     background-size: 100%
 }
 
-.homeButton{
+.homeButton {
     background-color: #ffbb73;
     position: relative;
     margin: 2ex;
@@ -18,79 +18,88 @@
     top: 0ex;
     box-shadow: 0px 0px 10px 0px rgb(23, 46, 1);
     border-radius: 5ex;
+    border: 2px solid #221f1f;
 }
 
-.homeButton:hover{
+.homeButton:hover {
     transform: scale(1.2);
+    transition-delay: 0s;
+    color: rgb(14, 14, 14);
+    transform: translateY(1ex);
+    box-shadow: 1px 1px #ffbb73, 2px 2px #ffbb73, 3px 3px #ffbb73;
+    transform: translateX(-3px);
 }
 
 .tituleCrear {
     position: relative;
     bottom: 0ex;
     color: #ffbb73;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 140%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 190%;
     text-shadow: 0.1ex 0.1ex 0.2ex rgb(5, 39, 2);
-    left: 52ex;
-    top: 0.5ex;
+    left: 37.5ex;
+    top: 0ex;
     margin-right: auto;
     margin-bottom: 1ex;
     width: 25ex;
     font-family: serif;
+    animation: blink 12s infinite;
     -webkit-animation: blink 12s infinite;
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #ffa500;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+
 }
 
 @-webkit-keyframes blink {
-    20%,
-    24%,
-    55% {
-      color: #111;
-      text-shadow: none;
-    }
-  
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-  /*     color: #fccaff;
-      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
-      color: #fff6a9;
-    }
-  }
-  
-  @keyframes blink {
-    20%,
-    24%,
-    55% {
-      color: #111;
-      text-shadow: none;
-    }
-  
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-  /*     color: #fccaff;
-      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
-      color: #fff6a9;
-    }
-  }
 
-.buttonRefresh{
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+        text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+        color: #fff6a9;
+    }
+}
+
+@keyframes blink {
+
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+        text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+        color: #fff6a9;
+    }
+}
+
+.buttonRefresh {
     background-color: #ffbb73;
     border-radius: 4ex;
     border-top: none;
@@ -101,10 +110,11 @@
     width: 4ex;
     height: 3ex;
     top: 5.5ex;
-    right: 10ex;
+    right: 11ex;
     width: 3ex;
     cursor: pointer;
     font-size: 28px;
+    border: 2px solid #221f1f;
 }
 
 .iconRefresh {
@@ -119,42 +129,43 @@
     transform: rotate(360deg) scale(1);
 }
 
-.card-containers{
+.card-containers {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    overflow:auto;
+    overflow: auto;
     border: 2px solid rgb(0, 0, 0);
     backdrop-filter: blur(0.2ex);
     margin: 1.5ex;
-    margin-top: 1ex;
+    margin-top: 2ex;
     width: 95%;
     height: 75%;
     font-family: serif;
-
     border-radius: 2ex;
     font-size: 25px;
 }
-.card-containers::-webkit-scrollbar{
+
+.card-containers::-webkit-scrollbar {
     background-color: rgba(22, 196, 16, 0);
 }
-.card-containers::-webkit-scrollbar-thumb{
+
+.card-containers::-webkit-scrollbar-thumb {
     background-color: #ffbb7373;
     border-radius: 3ex;
 }
 
-.containers{
+.containers {
     display: flex;
     margin-top: 3ex;
     margin-left: 20ex;
     margin-right: 10ex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     color: #ffbb73;
 }
 
-.inputs{
+.inputs {
     text-align: center;
     border-radius: 5ex;
     border: none;
@@ -162,13 +173,14 @@
     font-size: 18px;
     height: 30px;
     width: 200px;
+
 }
 
-.inputs:hover{
+.inputs:hover {
     background-color: white;
 }
 
-.error{
+.error {
     color: rgb(255, 0, 0);
     font-size: small;
     text-shadow: none;
@@ -183,6 +195,10 @@
     align-items: center;
     flex-direction: column;
     margin: 1ex;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+
 }
 
 .minHeight {
@@ -194,6 +210,10 @@
     align-items: center;
     flex-direction: column;
     margin: 1ex;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+
 }
 
 .maxHeight {
@@ -205,6 +225,10 @@
     align-items: center;
     flex-direction: column;
     margin: 1ex;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+
 }
 
 .minWeight {
@@ -216,6 +240,10 @@
     align-items: center;
     flex-direction: column;
     margin: 1ex;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+
 }
 
 .maxWeight {
@@ -227,6 +255,10 @@
     align-items: center;
     flex-direction: column;
     margin: 1ex;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+
 }
 
 .minLifeSpan {
@@ -238,6 +270,10 @@
     align-items: center;
     flex-direction: column;
     margin: 1ex;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+
 }
 
 .maxLifeSpan {
@@ -249,6 +285,10 @@
     align-items: center;
     flex-direction: column;
     margin: 1ex;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+
 }
 
 .picture {
@@ -260,55 +300,72 @@
     align-items: center;
     flex-direction: column;
     margin: 1ex;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
+
 }
 
-.listTemps{
+.listTemps {
     background-color: #ffbb73;
     border-radius: 5ex;
     width: 30ex;
     height: 5ex;
     text-align: center;
     margin-top: 2ex;
+    cursor: pointer;
 }
 
-.temperamentsItems{
+.temperamentsItems {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin: 0ex;
     margin-right: 4ex;
 }
 
-.itemsTemperaments{
+.itemsTemperaments {
     margin: 2ex;
     margin-left: 8ex;
+    position: relative;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffbb73, 0 0 15px #ffbb73, 0 0 20px #ffbb73, 0 0 40px #ffbb73, 0 0 60px #ff0000, 0 0 10px #ffbb73, 0 0 98px #ff0000;
 }
 
-.buttonRemove{
-    position:relative;
+.buttonRemove {
+    position: relative;
     left: 0.8ex;
-    top: 0.5ex;
+    top: 0.3ex;
     background-color: #ffbb73;
     border-radius: 5ex;
     border-color: transparent;
     width: 3ex;
     height: 3ex;
+    box-shadow: 0px 0px 10px 0px rgb(23, 46, 1);
+    border-radius: 5ex;
+    border: 2px solid #221f1f;
 }
 
-.buttonRemove:hover{
-    transform: scale(1.2);
+.buttonRemove:hover {
     cursor: pointer;
+    transform: scale(1.2);
+    transition-delay: 0s;
+    color: rgb(14, 14, 14);
+    transform: translateY(1ex);
+    box-shadow: 1px 1px #ffbb73, 2px 2px #ffbb73, 3px 3px #ffbb73;
+    transform: translateX(-3px);
+
 }
 
-.imgRemoveTemperament{
-    position:relative;
+.imgRemoveTemperament {
+    position: relative;
     left: -0.1ex;
     top: 0.1ex;
-    width: 2ex;
-    height: 2ex;
+    width: 1.6ex;
+    height: 1.6ex;
 }
 
-.createDogButton
-{
+.createDogButton {
     display: flex;
     position: relative;
     left: 145ex;
@@ -332,12 +389,11 @@
     cursor: not-allowed;
 }
 
-.createDogButton:hover 
-{
+.createDogButton:hover {
     transition-delay: 0s;
     color: #ffff;
-    box-shadow: 0 0 20px #ffff,
-                0 0 40px #ffff,
-                0 0 80px #ffff,
-                0 0 160px rgba(13, 153, 0, 0.068);                 
+    box-shadow: 0 0 20px #ffbb73,
+        0 0 40px #ffbb73,
+        0 0 80px #ffbb73,
+        0 0 160px rgba(13, 153, 0, 0.068);
 }
