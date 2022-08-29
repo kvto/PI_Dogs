@@ -21,9 +21,16 @@ las nuevas razas que el usuario desee ingresar.
   <img height="200" src="./1.png" />
 </p>
 
-##  NOTA: Ante des ejecutar el paso N 3:
-es necesario contar con una base de datos desde PostgresSQL llamada "Dogs"
-->(tutorial instalacion: https://youtu.be/n5Ec9bMouWQ)
-->(tutorial creacion base de datos: https://youtu.be/B_lqjZGwViI)
+##  NOTA: Ante des ejecutar el paso Nº 3:
+Es necesario contar con una base de datos desde PostgresSQL llamada "Dogs".
 
-2.- 
+(Tutorial instalacion: https://youtu.be/n5Ec9bMouWQ).
+
+(Tutorial creacion base de datos: https://youtu.be/B_lqjZGwViI).
+
+    * - Repetir el pasos Nº 2 cambiando el comando para posicionarse a "cd ./client/" 
+    * - Ejecutar el comando "npm install" posicionado en "cd ./client/"
+    * - Abrir dos terminales a la vez para asi ejecutar de forma correcta el front-end (interfaz) como el back-end (base datos) con el "npm start" 
+<p align="center">
+  <img height="200" src="./2.png" />
+</p>
