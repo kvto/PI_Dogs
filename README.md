@@ -6,9 +6,9 @@ las nuevas razas que el usuario desee ingresar.
 
 # Pasos para ejecutar el proyecto:
 <p align="left">
-  <img height="200" src="./portada.png" />
-  <img height="200" src="./portada2.png" />
-  <img height="200" src="./portada3.png" />
+  <img height="200" src="./img/portada.png" />
+  <img height="200" src="./img/portada2.png" />
+  <img height="200" src="./img/portada3.png" />
 </p>
 
 1.- Una vez descargado el proyecto, posicionarse en las carptes "client" y "api", para luego instalar los paquetes.
@@ -18,7 +18,7 @@ las nuevas razas que el usuario desee ingresar.
     * - Ejecutar el comando "npm install" posicionado en "cd ./api/" 
     
 <p align="center">
-  <img height="200" src="./1.png" />
+  <img height="200" src="./img/1.png" />
 </p>
 
 ##  NOTA: Ante des ejecutar el paso Nº 3:
@@ -32,5 +32,7 @@ Es necesario contar con una base de datos desde PostgresSQL llamada "Dogs".
     * - Ejecutar el comando "npm install" posicionado en "cd ./client/"
     * - Abrir dos terminales a la vez para asi ejecutar de forma correcta el front-end (interfaz) como el back-end (base datos) con el "npm start" 
 <p align="center">
-  <img height="200" src="./2.png" />
+  <img height="200" src="./img/2.png" />
 </p>
+
+Ya una vez teniendo ambos pasos a la perfeccion, se procede a ejecutar ambos entornos
