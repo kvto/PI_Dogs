@@ -1,38 +1,67 @@
-# ¡Bienvenido a la Aplicacion Canina! 🐶
+# Welcome to the Dog App! 🐶
 
-Una aplicación cuya finalidad es mostrar las diferentes razas caninas, otorgandole al 
-usuario las distintas posibilidades de el filtrado (nombre, razas, temperamento y peso) tanto las razas ya existente como
-las nuevas razas que el usuario desee ingresar.
+An application whose purpose is to show the different canine breeds, giving the
+user the different possibilities of filtering (name, breeds, temperament and weight) both existing breeds and
+the new races that the user wishes to enter.
 
-# Pasos para ejecutar el proyecto:
+# Steps to run the project:
 <p align="left">
   <img height="200" src="./img/portada.png" />
   <img height="200" src="./img/portada2.png" />
   <img height="200" src="./img/portada3.png" />
 </p>
 
-1.- Una vez descargado el proyecto, posicionarse en las carptes "client" y "api", para luego instalar los paquetes.
+1.- Once the project is downloaded, go to the "client" and "api" folders, to then install the packages.
 
-    * - Para acceder abrir la terminal (Control + Ñ) ó (Terminal - Nuevo Terminal).
-    * - Posicionarse en la carpeta con el conmando: "cd ./api/"
-    * - Ejecutar el comando "npm install" posicionado en "cd ./api/" 
+    * - To access open the terminal (Control + Ñ) or (Terminal - New Terminal).
+    * - Position yourself in the folder with the command: "cd ./api/"
+    * - Run the command "npm install" positioned at "cd ./api/"
     
 <p align="center">
   <img height="200" src="./img/1.png" />
 </p>
 
-##  NOTA: Ante des ejecutar el paso Nº 3:
-Es necesario contar con una base de datos desde PostgresSQL llamada "Dogs".
+## NOTE: Before executing step No. 3:
+It is necessary to have a database from PostgresSQL called "Dogs".
 
-(Tutorial instalacion: https://youtu.be/n5Ec9bMouWQ).
+(Installation tutorial: https://youtu.be/n5Ec9bMouWQ).
 
-(Tutorial creacion base de datos: https://youtu.be/B_lqjZGwViI).
+(Database creation tutorial: https://youtu.be/B_lqjZGwViI).
 
-    * - Repetir el pasos Nº 2 cambiando el comando para posicionarse a "cd ./client/" 
-    * - Ejecutar el comando "npm install" posicionado en "cd ./client/"
-    * - Abrir dos terminales a la vez para asi ejecutar de forma correcta el front-end (interfaz) como el back-end (base datos) con el "npm start" 
+    * - Repeat step No. 2 changing the command to position to "cd ./client/"
+    * - Run the command "npm install" positioned at "cd ./client/"
+    * - Open two terminals at the same time in order to correctly execute the front-end (interface) as well as the back-end (database) with the "npm start"
 <p align="center">
   <img height="200" src="./img/2.png" />
 </p>
 
-Ya una vez teniendo ambos pasos a la perfeccion, se procede a ejecutar ambos entornos
+Once having both steps perfectly, we proceed to execute both environments
+
+
+## More info about me: 
+<div id="badges" >
+Ing. Kevin J. Montero Zea 
+</div>
+<div id="badges" >
+CE: 004712881 🆔
+</div>
+<div id="badges" >
++51-913-695-382 📱
+</div>
+<div id="badges" >
+<a href="https://www.linkedin.com/in/kevin913montero/">
+    LinkedIn 👨‍🦰
+  </a>
+</div>
+<div id="badges" >
+<a href="https://portfoliokjmz.netlify.app/">
+    Portfolio 💼
+  </a>
+</div>
+
+
+<p align="center">
+<img height="50" src="./img/logo2.png" />
+<img height="50" src="./img/logo3.png" />
+<img height="50" src="./img/Sin título.png" />
+</p>
