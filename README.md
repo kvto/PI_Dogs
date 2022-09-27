@@ -37,6 +37,10 @@ It is necessary to have a database from PostgresSQL called "Dogs".
 
 Once having both steps perfectly, we proceed to execute both environments
 
+<p align="center">
+  <img height="200" src="./img/5.png" />
+</p>
+
 
 ## More info about me: 
 <div id="badges" >
