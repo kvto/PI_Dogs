@@ -1,8 +1,10 @@
 # Welcome to the Dog App! 🐶
 <div align="center">
 <div>
-    <img src="https://img.shields.io/badge/-ReactJs-black?style=for-the-badge&logoColor=black&logo=react&color=61DAFB" alt="reactjs" />
-    <img src="https://img.shields.io/badge/-Node.Js-black?style=for-the-badge&logoColor=black&logo=react&color=339933" alt="nextdotjs" />
+    <img src="https://img.shields.io/badge/-React.Js-black?style=for-the-badge&logoColor=black&logo=react&color=61DAFB" alt="reactjs" />
+    <img src="https://img.shields.io/badge/-Javascript-black?style=for-the-badge&logoColor=black&logo=javascript&color=F7DF1E" alt="javascript" />
+    <img src="https://img.shields.io/badge/-CSS-black?style=for-the-badge&logoColor=black&logo=css3&color=1572B6" alt="css" />
+    <img src="https://img.shields.io/badge/-Node.Js-black?style=for-the-badge&logoColor=black&logo=node.js&color=339933" alt="nodejs" />
   </div>
 </div> 
 An application whose purpose is to show the different canine breeds, giving the
