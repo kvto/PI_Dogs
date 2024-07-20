@@ -22,8 +22,6 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Code Snippets to Copy](#snippets)
-
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -33,37 +31,56 @@ the new races that the user wishes to enter.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- Next.js
-- TypeScript
-- Appwrite
-- Plaid
-- Dwolla
+- React.js
+- Javascript
+- Node.js
 - React Hook Form
-- Zod
-- TailwindCSS
-- Chart.js
-- ShadCN
-# Steps to run the project:
-<p align="left">
+- CSS
+- Express
+- Sequelize
 
-</p>
+## <a name="features">🔋 Features</a>
 
-1.- Once the project is downloaded, go to the "client" and "api" folders, to then install the packages.
+👉 **Home page**: Welcome to our dog information site. Explore various breeds and learn about their unique characteristics.
+
+👉 **All Dogs Information Page**: Discover detailed information on all dog breeds available in our database. Find details about its origin, size, temperament and more.
+
+👉 **Filtering Page by Name, Temperament and Breed:**: Use our advanced filters to find specific dog breeds by name, temperament, or breed group. Find the perfect dog for you with ease.
+
+👉 **Page to Register a New Breed**: Do you know a new breed of dog? Register her in our database which provides detailed information on her origin, characteristics and temperament.
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/kvto/PI_Dogs.git
+cd PI_Dogs
+```
+
+**Installation**
+
+Install the project dependencies using npm:
+
+
+ Once the project is downloaded, go to the "client" and "api" folders, to then install the packages.
 
     * - To access open the terminal (Control + Ñ) or (Terminal - New Terminal).
     * - Position yourself in the folder with the command: "cd ./api/"
     * - Run the command "npm install" positioned at "cd ./api/"
-    
 <p align="center">
   <img height="200" src="./img/1.png" />
 </p>
-
-## NOTE: Before executing step No. 3:
-It is necessary to have a database from PostgresSQL called "Dogs".
-
-(Installation tutorial: https://youtu.be/n5Ec9bMouWQ).
-
-(Database creation tutorial: https://youtu.be/B_lqjZGwViI).
 
     * - Repeat step No. 2 changing the command to position to "cd ./client/"
     * - Run the command "npm install" positioned at "cd ./client/"
@@ -72,11 +89,19 @@ It is necessary to have a database from PostgresSQL called "Dogs".
   <img height="200" src="./img/2.png" />
 </p>
 
+**Running the Project**
+
+```bash
 Once having both steps perfectly, we proceed to execute both environments
+
+```
 
 <p align="center">
   <img height="200" src="./img/5.png" />
 </p>
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+
 
 
 ## More info about me: 
@@ -95,14 +120,9 @@ CE: 004712881 🆔
   </a>
 </div>
 <div id="badges" >
-<a href="https://portfoliokjmz.netlify.app/">
+<a href="https://3-d-portafolio-olive.vercel.app/">
     Portfolio 💼
   </a>
 </div>
 
 
-<p align="center">
-<img height="50" src="./img/logo2.png" />
-<img height="50" src="./img/logo3.png" />
-<img height="50" src="./img/Sin título.png" />
-</p>
