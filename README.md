@@ -1,5 +1,10 @@
 # Welcome to the Dog App! 🐶
-
+<div align="center">
+<div>
+    <img src="https://img.shields.io/badge/-ReactJs-black?style=for-the-badge&logoColor=black&logo=react&color=61DAFB" alt="reactjs" />
+    <img src="https://img.shields.io/badge/-Node.Js-black?style=for-the-badge&logoColor=black&logo=react&color=339933" alt="nextdotjs" />
+  </div>
+</div> 
 An application whose purpose is to show the different canine breeds, giving the
 user the different possibilities of filtering (name, breeds, temperament and weight) both existing breeds and
 the new races that the user wishes to enter.
